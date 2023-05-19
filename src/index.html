@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>Ivan Gubarev for Digital design</title>
+</head>
+
+<body class="light-theme">
+
+  <header class="header light-theme">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="#" class="nav-item to-chair">Кресла</a>
+        <a href="#" class="nav-item to-sofa">Диваны</a>
+        <a href="#" class="nav-item to-bed">Кровати</a>
+      </nav>
+      <label class="switch">
+        <input class="tourner" type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </header>
+  <div class="overlay">
+    <form class="form" action="/">
+      <label for="count"></label>
+      <input class="count" id="count" name="count" type="text" placeholder="Количество"
+        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+      <div class="radio-inputs">
+        <label class="radio">
+          <input type="radio" name="radio" checked="">
+          <span class="name red">Красный</span>
+        </label>
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="name blue">Синий</span>
+        </label>
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="name green">Зеленый</span>
+        </label>
+      </div>
+      <label for="comment"></label>
+      <textarea class="comment" id="comment" name="comment" maxlength="2000" placeholder="Коментарий"></textarea>
+      <div class="form-buttons">
+        <button class="form-btn submit" type="submit">Купить</button>
+        <button class="form-btn close">Закрыть</button>
+      </div>
+    </form>
+  </div>
+  <button class="go-to-top-btn" title="Go to top">Вверх</button>
+  <main>
+    <section class="banner">
+      <div class="container">
+        <h1 class="banner-title">Листай вниз</h1>
+        <h2 class="banner-subtitle">или выбери категорию</h2>
+      </div>
+    </section>
+    <section class="items" id="chair">
+      <div class="container">
+        <h3 class="category-title">Кресла</h3>
+        <div class="cards">
+          <div class="card card-light">
+            <img class="item-img" src="./images/chair/chair-1.png" alt="chair image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">01.01.2021</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/chair/chair-2.png" alt="chair image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">02.02.2021</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/chair/chair-3.png" alt="chair image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">03.03.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/chair/chair-4.png" alt="chair image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">04.05.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/chair/chair-5.png" alt="chair image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">06.06.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/chair/chair-6.png" alt="chair image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">07.07.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/chair/chair-7.png" alt="chair image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">08.08.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/chair/chair-8.png" alt="chair image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">09.09.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/chair/chair-9.png" alt="chair image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">10.10.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/chair/chair-10.png" alt="chair image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">11.11.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="items" id="sofa">
+      <div class="container">
+        <h3 class="category-title">Диваны</h3>
+        <div class="cards">
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-1.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">12.12.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-2.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">23.10.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-3.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">17.09.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-4.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">05.12.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-5.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">14.05.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-6.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">28.02.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-7.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">30.08.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-8.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">01.04.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-9.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">05.09.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-10.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">04.10.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-11.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">05.03.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-12.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">22.11.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/sofa/sofa-13.png" alt="sofa image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">19.07.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="items" id="bed">
+      <div class="container">
+        <h3 class="category-title">Кровати</h3>
+        <div class="cards">
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-1.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">17.08.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-2.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">15.05.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-3.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">13.02.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-4.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">19.07.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-5.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">25.05.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-6.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">11.12.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-7.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">08.08.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-8.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">02.02.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-9.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">03.04.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-10.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">06.06.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-11.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">29.09.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-12.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">28.07.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-13.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">01.12.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+          <div class="card card-light">
+            <img class="item-img" src="./images/bed/bed-14.png" alt="bed image">
+            <p class="brand">"Woods&amp;Canvas"</p>
+            <p class="date">03.09.2023</p>
+            <button class="btn-buy">Купить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <ul class="nav-list">
+        <li class="list-item"><a class="list-link to-chair" href="#chair">Кресла</a></li>
+        <li class="list-item"><a class="list-link to-sofa" href="#sofa">Диваны</a></li>
+        <li class="list-item"><a class="list-link to-bed" href="#bed">Кровати</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./scripts/scroll.js"></script>
+  <script src="./scripts/modal.js"></script>
+  <script src="./scripts/theme.js"></script>
+  <script src="./scripts/go-to-top-btn.js"></script>
+  <script src="./scripts/get-date-info.js"></script>
+</body>
+
+</html>
